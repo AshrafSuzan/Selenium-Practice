@@ -1,0 +1,147 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2024-10-16T09:50:33.475Z",
+    "end": "2024-10-16T09:50:36.411Z",
+    "duration": 2936,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fc89371a-4664-49e9-9fcf-99557369a38f",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "729129cb-e53f-4d04-946c-c3e74f74f746",
+          "title": "add todo test",
+          "fullFile": "C:\\Users\\ashra\\Desktop\\Selenium project\\test\\first_test.js",
+          "file": "\\test\\first_test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "successfully adds todo to application",
+              "fullTitle": "add todo test successfully adds todo to application",
+              "timedOut": null,
+              "duration": 2435,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//launch browser\nlet driver = await new Builder().forBrowser(\"chrome\").build();\n//navigate web application\nawait driver.get(\"https://lambdatest.github.io/sample-todo-app/\");\n//add to do list (perform in application)\nawait driver.findElement(By.id(\"sampletodotext\")).sendKeys(\"Learn Selenium\",Key.RETURN);\ndone();\n//close the browser\nawait driver.quit();",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\ashra\\Desktop\\Selenium project\\test\\first_test.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\ashra\\Desktop\\Selenium project\\test\\first_test.js)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)",
+                "diff": null
+              },
+              "uuid": "a3a427e2-f728-4a07-a46b-ea8c05751967",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a3a427e2-f728-4a07-a46b-ea8c05751967"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2435,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": null
+        },
+        {
+          "uuid": "8670d7d1-1537-4575-8596-a638a4f3ed73",
+          "title": "add todo test",
+          "fullFile": "C:\\Users\\ashra\\Desktop\\Selenium project\\test\\secondTest.js",
+          "file": "\\test\\secondTest.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "successfully adds another todo to application",
+              "fullTitle": "add todo test successfully adds another todo to application",
+              "timedOut": null,
+              "duration": 2418,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//launch browser\nlet driver = await new Builder().forBrowser(\"chrome\").build();\n//navigate web application\nawait driver.get(\"https://lambdatest.github.io/sample-todo-app/\");\n//add to do list (perform in application)\nawait driver.findElement(By.id(\"sampletodotext\")).sendKeys(\"Learn Selenium\",Key.RETURN);\ndone();\n//close the browser\nawait driver.quit();",
+              "err": {
+                "message": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\ashra\\Desktop\\Selenium project\\test\\secondTest.js)",
+                "estack": "Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\ashra\\Desktop\\Selenium project\\test\\secondTest.js)\n    at listOnTimeout (node:internal/timers:581:17)\n    at process.processTimers (node:internal/timers:519:7)",
+                "diff": null
+              },
+              "uuid": "19df5e9f-d16b-4770-978d-b863e9abc28c",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "19df5e9f-d16b-4770-978d-b863e9abc28c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2418,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": null
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.7.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
